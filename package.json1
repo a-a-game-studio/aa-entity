@@ -1,0 +1,82 @@
+{
+    "name": "@a-a-game-studio/aa-core",
+    "version": "1.0.32",
+    "description": "Base core server application",
+    "main": "lib/src/index.js",
+    "types": "lib/src/index.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/a-a-game-studio/aa-core.git"
+    },
+    "keywords": [
+      "core"
+    ],
+    "author": "a-a-game-studio",
+    "license": "BSD-3-Clause",
+    "bugs": {
+      "url": "https://github.com/a-a-game-studio/aa-core/issues"
+    },
+    "homepage": "https://github.com/a-a-game-studio/aa-core#readme",
+    "peerDependencies": {},
+    "devDependencies": {
+      "@trongnd/ts-nodemon": "^1.0.3",
+      "@types/expect": "^1.20.4",
+      "@types/lodash": "^4.14.123",
+      "@types/md5": "^2.1.33",
+      "@types/mocha": "^5.2.6",
+      "@types/node": "^11.11.5",
+      "@typescript-eslint/eslint-plugin": "^1.9.0",
+      "@typescript-eslint/parser": "^1.9.0",
+      "cross-env": "^5.2.0",
+      "html-loader": "^0.5.5",
+      "typescript": "^3.5.3"
+    },
+    "scripts": {
+      "build": "tsc",
+      "test": "ts-mocha",
+      "server": "./node_modules/.bin/node ./lib/run.js",
+      "watch": "tsc-watch --outDir ./lib --onSuccess \"npm run server\"",
+      "en": "./node_modules/.bin/ts-node ./src/en.ts",
+      "run_test": "./node_modules/.bin/ts-node",
+      "migration:create": "./node_modules/.bin/knex migrate:make",
+      "migration:up": "./node_modules/.bin/knex migrate:latest",
+      "migration:down": "./node_modules/.bin/knex migrate:rollback",
+      "server_test": "tsc && node ./lib/Tests/App/App.test.js"
+    },
+    "dependencies": {
+      "@a-a-game-studio/aa-classes": "^1.0.11",
+      "@a-a-game-studio/aa-components": "^1.0.33",
+      "@a-a-game-studio/aa-redis-sys": "^1.0.2",
+      "@types/amqplib": "^0.5.13",
+      "@types/express": "^4.17.0",
+      "@types/sharp": "^0.25.0",
+      "amqplib": "^0.5.5",
+      "aws-sdk": "^2.503.0",
+      "chai": "^4.2.0",
+      "cors": "^2.8.5",
+      "ejs": "^2.7.1",
+      "express": "^4.17.1",
+      "fs": "0.0.1-security",
+      "knex": "^0.19.3",
+      "lodash": "^4.17.11",
+      "md5": "^2.2.1",
+      "mocha": "^6.2.0",
+      "mysql": "^2.17.1",
+      "nodemon": "^1.19.1",
+      "redis": "^2.8.0",
+      "sharp": "^0.25.2",
+      "ts-mocha": "^2.0.0",
+      "ts-node": "^8.0.3",
+      "ts-node-dev": "^1.0.0-pre.43",
+      "tsc-watch": "^4.2.3",
+      "typescript-require": "^0.2.10",
+      "uniqid": "^5.0.3",
+      "utf8": "^3.0.0",
+      "uuid": "^3.3.3"
+    },
+    "directories": {
+      "lib": "lib",
+      "test": "tests"
+    }
+  }
+  

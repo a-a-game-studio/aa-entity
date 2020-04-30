@@ -1,0 +1,27 @@
+{
+  "name": "aa-entity",
+  "version": "1.0.0",
+  "description": "Описания и маршруты для aa-core",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-a-game-studio/aa-entity.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-a-game-studio/aa-entity/issues"
+  },
+  "homepage": "https://github.com/a-a-game-studio/aa-entity#readme",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
+}
